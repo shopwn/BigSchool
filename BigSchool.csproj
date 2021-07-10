@@ -180,7 +180,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\AttendancesController.cs" />
     <Compile Include="Controllers\Api\CoursesController.cs" />
-    <Compile Include="Controllers\Api\FollowingsController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -213,18 +213,6 @@
     <Compile Include="Migrations\202107020638597_AddFollowingsTable.Designer.cs">
       <DependentUpon>202107020638597_AddFollowingsTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202107020753417_AddIsCanceledColumnToCourse.cs" />
-    <Compile Include="Migrations\202107020753417_AddIsCanceledColumnToCourse.Designer.cs">
-      <DependentUpon>202107020753417_AddIsCanceledColumnToCourse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202107021620559_AddNotification.cs" />
-    <Compile Include="Migrations\202107021620559_AddNotification.Designer.cs">
-      <DependentUpon>202107021620559_AddNotification.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202107021622298_AddNotification1.cs" />
-    <Compile Include="Migrations\202107021622298_AddNotification1.Designer.cs">
-      <DependentUpon>202107021622298_AddNotification1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -241,6 +229,8 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CoursesViewModel.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\FollowCourse.cs" />
+    <Compile Include="ViewModels\FollowingViewModel.cs" />
     <Compile Include="ViewModels\FutureDate.cs" />
     <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
@@ -305,6 +295,8 @@
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Attending.cshtml" />
     <Content Include="Views\Courses\Mine.cshtml" />
+    <Content Include="Views\Courses\Following.cshtml" />
+    <Content Include="Views\Courses\WhoIsFollowMe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,15 +332,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107020638597_AddFollowingsTable.resx">
       <DependentUpon>202107020638597_AddFollowingsTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107020753417_AddIsCanceledColumnToCourse.resx">
-      <DependentUpon>202107020753417_AddIsCanceledColumnToCourse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107021620559_AddNotification.resx">
-      <DependentUpon>202107021620559_AddNotification.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107021622298_AddNotification1.resx">
-      <DependentUpon>202107021622298_AddNotification1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

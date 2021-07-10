@@ -52,7 +52,8 @@
                         }
                     },
                     callback: function (result) {
-                        if (result) {
+                        if (result)
+                        {
                             $.ajax({
                                 url: "/api/courses/" + link.attr("data-course-id"),
                                 method: "DELETE"

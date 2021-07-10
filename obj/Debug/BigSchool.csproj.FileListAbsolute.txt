@@ -119,6 +119,3 @@ C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\bin\System.Net.Http.Formattin
 C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\bin\System.Web.Http.xml
 C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\bin\System.Web.Http.WebHost.xml
 C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\obj\Debug\BigSchool.Migrations.AddFollowingsTable.resources
-C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\obj\Debug\BigSchool.Migrations.AddIsCanceledColumnToCourse.resources
-C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\obj\Debug\BigSchool.Migrations.AddNotification.resources
-C:\Users\bisicetea\Desktop\TH-Web\Submit\BigSchool\obj\Debug\BigSchool.Migrations.AddNotification1.resources

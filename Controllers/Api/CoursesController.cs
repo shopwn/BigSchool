@@ -26,15 +26,17 @@ namespace BigSchool.Controllers.Api
 
             if (course.IsCanceled)
                 return NotFound();
-
             course.IsCanceled = true;
-            //Add Noti
+
+            /*
+            // Add Noti
             var notification = new Notification()
             {
                 DateTime = DateTime.Now,
                 Course = course,
                 Type = NotificationType.CourseCanceled
             };
+
             var attendees = _dbContext.Attendances
                 .Where(a => a.CourseId == course.Id)
                 .Select(a => a.Attendee)
@@ -47,7 +49,7 @@ namespace BigSchool.Controllers.Api
                     Notification = notification
                 };
                 _dbContext.UserNotifications.Add(userNotification);
-            }
+            }*/
 
             _dbContext.SaveChanges();
 

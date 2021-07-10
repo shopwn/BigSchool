@@ -16,6 +16,11 @@ namespace BigSchool
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Routes.MapHttpRoute(
+                name: "UnFollow",
+                routeTemplate: "api/unfollow/{followerId}/{followeeId}",
+                defaults: new { controller = "Followings", action = "UnFollow", followerId = RouteParameter.Optional, followeeId = RouteParameter.Optional }
+            );
         }
     }
 }

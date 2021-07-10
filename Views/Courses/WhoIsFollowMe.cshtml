@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "WhoIsFollowMe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Who is following me?</h2>
+
+<div class="row">
+    <ul class="course">
+        @foreach (var follow in Model.Followings)
+        {
+            <li>
+                <div class="details">
+                    <span class="lecturer">
+                        @follow.Name
+                    </span>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
